@@ -17,6 +17,7 @@ package io.seata.discovery.registry;
 
 import java.net.InetSocketAddress;
 import java.util.List;
+import java.util.Properties;
 
 import io.seata.config.Configuration;
 import io.seata.config.ConfigurationFactory;
@@ -49,6 +50,8 @@ public interface RegistryService<T> {
      * @throws Exception the exception
      */
     void register(InetSocketAddress address) throws Exception;
+
+//    void register(InetSocketAddress address, Properties properties);
 
     /**
      * Unregister.
